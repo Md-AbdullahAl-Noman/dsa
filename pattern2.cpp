@@ -137,35 +137,108 @@ int main()
 //ABC
 //ABC
 //ABC
-int n;
-cin>>n;
-int row=1;
-char start='A';
+// int n;
+// cin>>n;
+// int row=1;
+// char start='A';
 
-while(row<=n)
+// while(row<=n)
+//     {
+//         int col=1;
+//         while(col<=n)
+//         {   
+            
+//             cout<<start<<" ";
+//             start+=1;
+//             col++;
+//         }
+//         cout<<endl;
+//         row++;
+//     }
+
+
+
+//ABC
+//BCD
+//CDE
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while(row<=n)
+    // {
+    //     int col=1;
+    //     while(col<=n)
+    //     { 
+    //         char ch='A'+row+col-2;
+    //         cout<<ch;
+    //         col++;
+    //     }
+    //     cout<<endl;
+    //     row++;
+    // }
+   
+// //A
+// //BC
+// //CDE
+//     int n;
+//     cin>>n;
+//     int row=1;
+//     while(row<=n)
+//     {
+//         int col=1;
+//         while(col<=row)
+//         { 
+//             char ch='A'+row+col-2;
+//             cout<<ch;
+//             col++;
+//         }
+//         cout<<endl;
+//         row++;
+//     }
+
+
+//A
+//BB
+//CCC
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while(row<=n)
+    // {
+    //     int col=1;
+    //     while(col<=row)
+    //     { 
+            
+    //         cout<<char('A'+row-1);
+    //         col++;
+    //     }
+    //     cout<<endl;
+    //     row++;
+    // }
+
+
+//A
+//BC
+//DEF
+    int n;
+    cin>>n;
+    int row=1;
+    char val='A';
+
+    while(row<=n)
     {
         int col=1;
-        while(col<=n)
-        {   
+        while(col<=row)
+        {    
             
-            cout<<start<<" ";
-            start+=1;
+            cout<<val;
+            val++;
             col++;
         }
         cout<<endl;
         row++;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
