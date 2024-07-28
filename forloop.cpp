@@ -62,22 +62,29 @@ int main()
 
 ////////Pirme or not
 
-bool isPrime=1;
+// bool isPrime=1;
 
-for (int i=2;i<n;i++)
-{
-    if(n%i==0)
-    {
-        isPrime=0;
-    }
+// for (int i=2;i<n;i++)
+// {
+//     if(n%i==0)
+//     {
+//         isPrime=0;
+//     }
 
-}
+// }
 
-if (!isPrime)
-{
-    cout<<"Not a prime number";
-}else{
-    cout<<"Prime number";
-}
+// if (!isPrime)
+// {
+//     cout<<"Not a prime number";
+// }else{
+//     cout<<"Prime number";
+// }
+
+// for(int i=0;i<=5;i--)
+// {
+//     cout<<i<<endl;
+//     i++;
+
+// }
 
 }
