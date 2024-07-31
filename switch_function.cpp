@@ -87,9 +87,11 @@ int main()
 // cout<<count[i]<<" notes of "<<notes[i]<<endl;
 // }
 ///////////////Funtion--->well defined task ;input -->function -->output
+int c,d;
+cin>>c>>d;
 
 
-int output=power(2,3);
+int output=power(c,d);
 cout<<output<<endl;
 
 
