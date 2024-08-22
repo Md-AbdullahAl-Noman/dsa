@@ -32,11 +32,32 @@ int sqrtX(int n)
     return ans;
 
 }
+
+double precisionTill(int n ,int precision,int tempSol)
+{
+    double factor=1;
+    double ans=tempSol;
+    for(int i=0;i<precision;i++)
+    {
+        factor=factor/10;
+        for (double j=ans;j*j<n;j=j+factor)
+        {
+            ans=j;
+        }
+
+
+    }
+
+    return ans;
+
+}
 int main()
 {
 
-    int n=25;
+    int n=27;
     cout<<"Sqaure root of "<<n<<" is "<<sqrtX(n);
+    int intPart=sqrtX(n);
+    cout<<endl<<"Sqaure root of "<<n<<" is "<<precisionTill(n,3,intPart);
 
 
 
