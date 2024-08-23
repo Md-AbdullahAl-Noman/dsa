@@ -33,6 +33,7 @@ int main()
 
 
 
-
+  //only need variables as no extra space taken ,so Space Complexity is O(1)
+  //Time Complexity is O(n^2)as (n-1)+(n-2)+...+2+1 = n(n-1)/2 = O(n^2);quadratic part got the precedence and other are ignored
     return 0;
 }
