@@ -33,18 +33,24 @@ void reverseString(char name[])
 bool checkPalindrome(char name[])
 {
     int start = 0, end = lengthOfString(name) - 1;
-    while (start <= end)
-    {
-        if (toLowerCase(name[start++]) != toLowerCase(name[end--]))
-        {
-            return false;
+     while (start <= end) {
+        // Ignore special characters
+        if (!((name[start] >= 'a' && name[start] <= 'z') || (name[start] >= 'A' && name[start] <= 'Z'))) {
+            start++;
+        } else if (!((name[end] >= 'a' && name[end] <= 'z') || (name[end] >= 'A' && name[end] <= 'Z'))) {
+            end--;
+        } else {
+            // Both start and end point to letters, compare them
+            if (toLowerCase(name[start++]) != toLowerCase(name[end--])) {
+                return false;
+            }
         }
     }
     return true;
 }
 int main()
 {
-    char name[5];
+    char name[20];
     cout << "Enter your string to reverse:";
     cin >> name;
     int length = lengthOfString(name);
