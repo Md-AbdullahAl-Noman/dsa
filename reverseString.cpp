@@ -10,7 +10,16 @@ int lengthOfString(char name[])
     }
     return count;
 }
-
+char toLowerCase(char ch)
+{
+    if (ch>='a'&& ch<='z')
+    {
+        return ch;
+    }else{
+        char temp= ch-'A'+'a';
+        return temp;
+    }
+}
 void reverseString(char name[])
 {
     int start = 0, end = lengthOfString(name) - 1;
@@ -20,12 +29,13 @@ void reverseString(char name[])
     }
 }
 
+
 bool checkPalindrome(char name[])
 {
     int start = 0, end = lengthOfString(name) - 1;
     while (start <= end)
     {
-        if (name[start++] != name[end--])
+        if (toLowerCase(name[start++]) != toLowerCase(name[end--]))
         {
             return false;
         }
