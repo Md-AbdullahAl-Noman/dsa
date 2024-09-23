@@ -64,7 +64,8 @@
     "initializer_list": "cpp",
     "regex": "cpp",
     "utility": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "vector": "cpp"
   },
   "pieces.cloudCapabilities": "Blended",
   "pieces.telemetry": true
