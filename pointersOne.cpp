@@ -6,7 +6,7 @@ int main(){
     //pointer is used to store the address of the variable.It also stores in the memory with its address
 
     int num=5;
-    // int *ptr;//very bad practice as it is pointing to a memory location that is not known or it can be anywhere in the memory.so avoid this declaration.
+    // int *ptr;//very bad practice as it is pointing to a memory location that is not known or it can be anywhere in the memory.so avoid this declaration.Instead initialize with null pointer i.e. int* ptr = 0;
 
     int *ptr=&num; //pointer declaration and initialization..Here & is called the address of operator.
     //there may be different type of pointers like *double,*float,*char, etc depending on the the type of the variable.
@@ -25,7 +25,10 @@ int main(){
     *ptr+=5;
     cout<<"Value of the original variable after modifying using pointer: "<<num<<endl;
 
-
+// now copy one pointer to another lets say copy the pointer p to q.
+   int *q=ptr;//if ptr is 100 then q is 100 both are address are the address of the original variable
+   cout<<"The value of q is : "<<q<<"="<<"The vlaue of ptr is : "<<ptr<<endl;
+   cout<<"The vlaue stored in the ptr address is : "<<*ptr<<"="<<*q<<endl;
 
     return 0;
 }
