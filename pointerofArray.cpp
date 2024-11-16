@@ -17,5 +17,9 @@ int main()
     int i=4;
     cout<<i[arr]<<"="<<arr[i]<<" As :"<<*(arr+i)<<" Is same as "<<*(i+arr)<<endl;
 
+    //sizeof is used to determine the size of the data type in bytes.
+    cout<<"The size of the value of ptr pointing to : "<<sizeof(*ptr)<<endl;
+    cout<<"The size of the ptr which is pointing to the int array : "<<sizeof(ptr)<<endl;
+    cout<<sizeof(&arr)<<endl;
     return 0;
 }
