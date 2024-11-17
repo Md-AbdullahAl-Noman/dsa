@@ -3,7 +3,9 @@ using namespace std;
 
 int main()
 {
-    // int arr[5] = {1, 2, 3, 4, 5};
+    int arr[5] = {1, 2, 3, 4, 5};
+    // int *ptr = &arr;//can not used to point the contiguous memory addresses or say the entire array address.that is why it is not a valid operation to thake the address of an entire array but we can use &arr[0] to get the address of an single memory address 
+
     // int *ptr = arr; // arr is the address of the array same as &arr[0]
     // int *ptr2 = &arr[3];
     // cout << "Here ptr is the address of the array or the address of the first element of the array" << arr << "=" << ptr <<"Is also equal to : "<< &arr[0] << endl;
@@ -25,8 +27,8 @@ int main()
     //the pointer of char is not same as the pointer of int as the char array ,cout  treats as c-string 
     //char * the cout attempts to print the string starts from the address the pointer points to until it finds the null character \0.if it does not find the null character then it may lead to undefined behavior
 
-    char ch[6]="noman";
-    char *c=ch;//here ch is the address of the first character equavalent to ch[0] 
+    char ch='a';
+    char *c=&ch;//here ch is the address of the first character equavalent to ch[0] 
     cout <<c<<endl;//it is printing the string from the address pointed by c until it finds the null character \0
     return 0;
 }
